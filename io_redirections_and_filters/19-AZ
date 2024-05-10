@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'A, c' 'Z, e' < input > tmp_input | mv tmp_input input
+tr 'A, c' 'Z, e'
