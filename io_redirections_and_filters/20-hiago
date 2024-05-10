@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -dr'c, C'
+tr -d 'c, C'
