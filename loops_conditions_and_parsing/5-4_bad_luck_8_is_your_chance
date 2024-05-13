@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 ##setting up script that will show Best School 10 times and bad luck at 4, good luck at 8 and Best School for the rest##
 num=1
-while [ $num -lt 11 ]
+while [ $num -le 10 ]
 do
-if (( $num -eq 4 ))
+if [ $num -eq 4 ]
 	then echo "bad luck"
 ##checking for the 8th spot##
-elif (( $num -eq 8 ))
+elif [ $num -eq 8 ]
 then
        	echo "good luck"
 else
