@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+##using the until loop for posting best school 10x##
+num=1
+until [ $num -gt 10 ]
+do
+	echo "Best School"
+##increase by 1##
+	((num++))
+done
