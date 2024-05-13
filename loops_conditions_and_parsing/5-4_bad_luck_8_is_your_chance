@@ -5,10 +5,13 @@ while [ $num -le 10 ]
 do
 echo "Best School"
 if [ $num -eq 4 ]
-then echo "bad luck"
-fi
-if [ $num -eq 8 ]
-then echo "good luck"
+	then echo "bad luck"
+##checking for the 8th spot##
+elif [ $num -eq 8 ]
+then
+       	echo "good luck"
+else
+	echo "Best School"	
 fi
 ##increase by 1##
 ((num++))
