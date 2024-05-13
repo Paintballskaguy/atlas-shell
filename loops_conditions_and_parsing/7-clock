@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+##script to show a clock with hour and minutes in between##
+HOUR=0
+MINUTE=1
+while [ $HOUR -le 12 ]
+do
+	while [ $MINUTE -le 59 ]
+	do
+printf "%02d:%02d\n" $HOUR $MINUTE
+((MINUTE++))
+done
+##Resets the minute after the hour displays##
+MINUTE=1
+((HOUR++))
+done
