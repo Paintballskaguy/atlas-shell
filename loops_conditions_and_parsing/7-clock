@@ -4,9 +4,11 @@ HOUR=0
 MINUTE=1
 while [ $HOUR -le 12 ]
 do
-	while [ $MINUTE -le 59 ]
+	echo "Hour: $HOUR"
+while [ $MINUTE -le 59 ]
 	do
-printf "%02d:%02d\n" $HOUR $MINUTE
+echo "$MINUTE"
+
 ((MINUTE++))
 done
 ##Resets the minute after the hour displays##
