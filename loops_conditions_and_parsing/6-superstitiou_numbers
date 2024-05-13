@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+##Script to show bad luck from other countries with numbers##
+NUMBER=1
+while [ $NUMBER -le 20 ]
+do
+case $NUMBER in
+4)
+echo "bad luck from China"
+;;
+9)
+echo "bad luck from Japan"
+;;
+17)
+echo "bad luck from Italy"
+;;
+*)
+	echo "$NUMBER"
+	;;
+esac
+((NUMBER++))
+done
+  
