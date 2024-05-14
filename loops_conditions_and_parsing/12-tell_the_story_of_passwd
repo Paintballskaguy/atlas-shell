@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+##script to tell a story about the passwd file and all it's adventures##
+while IFS=: read -r USERNAME _ uid _ gid _ home_directory _ command/shell _ gecos _
+do
+password=$(grep -E "^$USERNAME:" /etc/shadow | cut -d: -f2)
+echo "The user $USERNAME is part of the $gid gang, lives in $home_directory and rides $command/shell. $uid 's place is protected by the passcode $password, more info about the user here: $gecos"
+done < /etc/passwd
