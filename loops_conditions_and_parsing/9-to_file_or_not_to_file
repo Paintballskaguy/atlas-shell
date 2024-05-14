@@ -4,13 +4,13 @@ if test -f school
 then
 echo "school file exists"
 
-if test -s school
+if test -z school
 then
 	echo "school file is empty"
 else
 	echo "school file is not empty"
 fi
-if test -f school 
+if test -d school 
 then
 	echo "school is a regular file"
 	fi
