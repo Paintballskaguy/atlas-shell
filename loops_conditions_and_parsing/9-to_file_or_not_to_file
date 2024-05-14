@@ -2,17 +2,17 @@
 ##Script to give information about a file. this is for file- school##
 if test -f school
 then
-printf "school file exists"
+echo "school file exists"
 else 
 	echo "school file does not exist"
 fi
 if test -s school
 then
-	printf "school file is empty"
+	echo "school file is empty"
 else
 	echo "school file is not empty"
 fi
 if test -f school 
 then
-	printf "school is a regular file"
+	echo "school is a regular file"
 fi
