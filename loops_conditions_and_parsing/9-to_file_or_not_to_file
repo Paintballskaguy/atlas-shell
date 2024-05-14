@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ##Script to give information about a file. this is for file- school##
-if test -f school
+if test -e school
 then
 echo "school file exists"
 
