@@ -3,9 +3,7 @@
 if test -f school
 then
 echo "school file exists"
-else 
-	echo "school file does not exist"
-fi
+
 if test -s school
 then
 	echo "school file is empty"
@@ -15,4 +13,7 @@ fi
 if test -f school 
 then
 	echo "school is a regular file"
+	fi
+else
+        echo "school file does not exist"
 fi
