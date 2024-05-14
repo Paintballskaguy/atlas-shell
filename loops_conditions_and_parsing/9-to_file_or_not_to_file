@@ -1,17 +1,17 @@
 #!/usr/bin/env bash
 ##Script to give information about a file. this is for file- school##
-if test -e school
+if [ -e "school" ]
 then
 echo "school file exists"
 
-if test -s school 
+if [ -s "school" ]
 then
 	echo "school file is empty"
 else
 	echo "school file is not empty"
 fi
 
-if test -f school 
+if [ -f "school" ]
 then
 	echo "school is a regular file"
 fi
