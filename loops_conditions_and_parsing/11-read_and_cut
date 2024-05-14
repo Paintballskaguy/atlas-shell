@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 ##Script to read a file and print certain aspects of it ##
-while IFS=, read -r username _ uid _ home _
+while IFS=: read -r username _ uid _ home _
 do
-echo "username: $username"
-echo "user ID: $uid"
-echo "home directory: $home"
+echo "$username:$uid:$home"
 done < /etc/passwd
