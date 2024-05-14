@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-##Script to give information about a file. in this case school##
+##Script to give information about a file. this is for file- school##
 if test -f school
 then
 printf "school file exists"
