@@ -2,5 +2,5 @@
 ##Script to read a file and print certain aspects of it ##
 while read -r username _ uid _ home _
 do
-echo "$username:$uid:$home"
+echo "$username:$uid:$home" | cut -d: -f1,3,6
 done < /etc/passwd
