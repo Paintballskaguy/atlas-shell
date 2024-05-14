@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 ##script to tell a story about the passwd file and all it's adventures##
-while IFS=: read -r USERNAME password uid gid home shell gecos 
+while IFS=: read -r USERNAME password uid gid home shell info 
 do
-echo "The user $USERNAME is part of the $gid gang, lives in $home and rides $shell. $uid's place is protected by the passcode $password, more info about the user here: $gecos"
+echo "The user $USERNAME is part of the $gid gang,"\
+       "lives in $home and rides $shell."\
+       "$uid's place is protected by the passcode $password, more info about the user here: $info"
 done < /etc/passwd
