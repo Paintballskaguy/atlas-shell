@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+##Script to show contents of dir, list format and only the good part of the title##
+LIST=$(ls -1A)
+for i in $LIST
+do 
+	if [[ "$i" == *-* ]] ; then
+		echo "${i#*-}"
+	else
+	echo "$i"
+	fi
+done
+
