@@ -2,7 +2,7 @@
 ##Script to show 100 numbers with VAR inserted##
 for (( i=1; i <= 100; i++ ))
 do
-	if ((i % 3 == 0 )) && ((i % 5 === 0 ))
+	if ((i % 3 == 0 )) && ((i % 5 == 0 ))
 	then	echo "Fizzbuzz"
 	elif (( i % 3 == 0 )) 
 	then	echo "Fizz"
